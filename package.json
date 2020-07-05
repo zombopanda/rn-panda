@@ -1,0 +1,34 @@
+{
+  "name": "rn-panda",
+  "version": "1.0.0",
+  "description": "React Native template with Typescript, Mobx and React Navigation.",
+  "scripts": {},
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombopanda/rn-panda.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "template",
+    "boilerplate",
+    "starter",
+    "typescript",
+    "mobx"
+  ],
+  "author": "Bohdan Lytvynenko <zombopanda@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/zombopanda/rn-panda",
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    }
+  }
+}
