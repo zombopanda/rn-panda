@@ -49,4 +49,4 @@ matrix:
         - pod install
         - cd ..
       script:
-        - npm run run-ios
+        - npm run ios
