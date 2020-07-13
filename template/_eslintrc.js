@@ -1,6 +1,9 @@
 module.exports = {
   extends: ['@react-native-community', 'plugin:react-native/all', 'airbnb-typescript'],
   plugins: ['autofix', 'unused-imports', 'module-resolver'],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   rules: {
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
@@ -19,7 +22,7 @@ module.exports = {
     'jsx-a11y/accessible-emoji': 0,
     'max-len': ['error', { code: 120 }],
     '@typescript-eslint/no-unused-vars': 'off',
-    'unused-imports/no-unused-imports-ts': 'error',
+    'unused-imports/no-unused-imports-ts': 'off',
     'unused-imports/no-unused-vars-ts': [
       'warn',
       { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
