@@ -23,7 +23,7 @@
     "@react-navigation/native": "^5.5.1",
     "@react-navigation/stack": "^5.4.2",
     "axios": "^0.19.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "lodash-decorators": "^6.0.1",
     "luxon": "^1.24.1",
     "mobx": "^5.15.4",
