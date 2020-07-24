@@ -31,7 +31,7 @@ matrix:
 
     - language: objective-c
       os: osx
-      osx_image: xcode11.3
+      osx_image: xcode11.5
       podfile: template/ios/Podfile
       cache:
         - cocoapods
@@ -42,7 +42,7 @@ matrix:
         - brew tap wix/brew
         - brew install applesimutils
         - gem install cocoapods
-        - nvm install 12.14.0
+        - nvm install 14.5
         - npm i
       before_script:
         - cd ios

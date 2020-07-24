@@ -13,10 +13,10 @@
 - [MobX](https://github.com/mobxjs/mobx) for state management
 - [MobX-Sync](https://github.com/acrazing/mobx-sync) for state persistence
 - [React Navigation](https://reactnavigation.org/) v5
+- [react-native-bootsplash](https://github.com/zoontek/react-native-bootsplash)
 - [react-native-svg](https://github.com/react-native-community/react-native-svg)  with [SVGR](https://github.com/gregberge/svgr)
 - [axios](https://github.com/axios/axios)
 - [RXJS](https://github.com/ReactiveX/rxjs)
-- ...
 
 ## Getting Started
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import Loading from 'Loading';
 import { enableScreens } from 'react-native-screens';
-import SplashScreen from 'react-native-splash-screen';
+import RNBootSplash from 'react-native-bootsplash';
 import { Provider } from 'mobx-react';
 import store from 'stores/Store';
 
 enableScreens();
 
 const App = () => {
-  SplashScreen.hide();
+  RNBootSplash.hide({ duration: 250 });
 
   return (
     <Provider store={store}>

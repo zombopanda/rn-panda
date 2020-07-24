@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import AsyncStorage from '@react-native-community/async-storage';
 import { $appState, $netInfo } from 'lib/helpers/reactive';
 import { bindAll } from 'lodash-decorators';

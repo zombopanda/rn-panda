@@ -1,8 +1,10 @@
 {
   "name": "rn-panda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native template with Typescript, Mobx and React Navigation.",
-  "scripts": {},
+  "scripts": {
+    "prepublish": "bash ./clean.sh"
+  },
   "files": [
     "template",
     "template.config.js"
