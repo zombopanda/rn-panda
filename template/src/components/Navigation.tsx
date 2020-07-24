@@ -44,7 +44,7 @@ const Tabs = ({ navigation, route }: StackScreenProps<StackParamList>) => (
     <Tab.Screen
       name="HomeStack"
       options={{
-        tabBarLabel: t('Hello world'),
+        tabBarLabel: t('Home'),
         // @ts-ignore
         tabBarIcon: ({ focused }) => <Home width={28} height={28} style={!focused && styles.opacity} />,
       }}
@@ -94,7 +94,7 @@ const Navigation: FC = () => {
           <HomeStack.Screen
             name="Home"
             component={Tabs}
-            options={{ title: t('Hello world') }}
+            options={{ title: t('Title') }}
           />
           <HomeStack.Screen
             name="Settings"

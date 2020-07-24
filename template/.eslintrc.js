@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['@react-native-community', 'plugin:react-native/all', 'airbnb-typescript'],
-  plugins: ["autofix", "unused-imports", "module-resolver"],
+  plugins: ["autofix", "unused-imports", "module-resolver", "react-hooks"],
   parserOptions: {
     project: './tsconfig.json',
   },

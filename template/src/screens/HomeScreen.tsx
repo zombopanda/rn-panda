@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
 const HomeScreen: FC<NavigationProps<'Home'>> = ({ store, navigation }) => (
   <View style={styles.container}>
-    <Text>Main screen</Text>
+    <Text>Home screen</Text>
   </View>
 );
 
