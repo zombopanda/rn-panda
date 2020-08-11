@@ -2,7 +2,7 @@ matrix:
   include:
     - language: android
       dist: trusty
-      cache: npm
+      cache: yarn
       android:
         components:
           # use the latest revision of Android SDK Tools
@@ -20,10 +20,12 @@ matrix:
           - extra-google-m2repository
           - extra-android-m2repository
       before_install:
+        - mkdir "$ANDROID_HOME/licenses" || true
+        - cp ./licenses/* "$ANDROID_HOME/licenses/"
         - cd template
       install:
-        - nvm install 12.14.0
-        - npm i
+        - nvm install 14.5
+        - yarn
       before_script:
         - cd android
       script:
@@ -31,11 +33,11 @@ matrix:
 
     - language: objective-c
       os: osx
-      osx_image: xcode11.5
+      osx_image: xcode11.6
       podfile: template/ios/Podfile
       cache:
         - cocoapods
-        - npm
+        - yarn
       before_install:
         - cd template
       install:
@@ -43,7 +45,7 @@ matrix:
         - brew install applesimutils
         - gem install cocoapods
         - nvm install 14.5
-        - npm i
+        - yarn
       before_script:
         - cd ios
         - pod install

@@ -1,14 +1,7 @@
 {
   "name": "rn-panda",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Native template with Typescript, Mobx and React Navigation.",
-  "scripts": {
-    "prepublish": "bash ./clean.sh"
-  },
-  "files": [
-    "template",
-    "template.config.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zombopanda/rn-panda.git"

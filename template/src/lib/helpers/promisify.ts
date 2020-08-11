@@ -18,15 +18,14 @@ export const promisify = <
 
 export const mapPromisify = map(promisify);
 
-export function promisifyNode<T>(f: (cb: (err: any, res: T) => void) => void, thisContext?: any): () => Promise<T>;
-export function promisifyNode<A, T>(f: (arg: A, cb: (err: any, res: T) => void) => void, thisContext?: any): (arg: A) => Promise<T>;
-export function promisifyNode<A, A2, T>(f: (arg: A, arg2: A2, cb: (err: any, res: T) => void) => void, thisContext?: any): (arg: A, arg2: A2) => Promise<T>;
+// eslint-disable-next-line max-len
+export function promisifyNode<A extends readonly unknown[], T>(f: (...args: [...A, (err: any, res: T) => void]) => void, thisContext?: any): (...args: [...A]) => Promise<T>;
 
 export function promisifyNode(f: any, thisContext?: any) {
-  return function (...args: any[]) {
-    return new Promise((resolve, reject) => {
+  return (...args: any[]) => (
+    new Promise((resolve, reject) => {
       args.push((err: any, result: any) => (err !== null ? reject(err) : resolve(result)));
       f.apply(thisContext, args);
-    });
-  };
+    })
+  );
 }
