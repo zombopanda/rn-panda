@@ -19,9 +19,11 @@ matrix:
           - extra-google-google_play_services
           - extra-google-m2repository
           - extra-android-m2repository
+      licenses:
+        - android-sdk-preview-license-.+
+        - android-sdk-license-.+
+        - google-gdk-license-.+
       before_install:
-        - mkdir "$ANDROID_HOME/licenses" || true
-        - cp ./licenses/* "$ANDROID_HOME/licenses/"
         - cd template
       install:
         - nvm install 14.5
